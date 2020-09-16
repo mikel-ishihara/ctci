@@ -1,0 +1,12 @@
+function isUniq(string) {
+	let answer = {};
+  for( let i = 0; i < string.length; i++) {
+  	if(answer[string[i]]) {
+    	return false;
+    }
+    else answer[string[i]] = true;
+  	}
+  return true;
+}
+
+console.log(isUniq("abcc"));
